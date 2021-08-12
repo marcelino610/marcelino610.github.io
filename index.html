@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="grid">
+            <div class="text-right" id="visor">
+                <p class="text-right" id="entries-visor"></p>
+                <p class="text-right" id="results-visor" style="display: none;"></p>
+            </div>
+            <button class="numero" id="seven" onclick="manejarNumeros(id)">7</button>
+            <button class="numero" id="eight" onclick="manejarNumeros(id)">8</button>
+            <button class="numero" id="nine" onclick="manejarNumeros(id)">9</button>
+            <button id="div" onclick="manejarSignos(id)">÷</button>
+            <button id="left-parenthesis" onclick="manejarParentesis(id)">(</button>
+            <button class="numero" id="four" onclick="manejarNumeros(id)">4</button>
+            <button class="numero" id="five" onclick="manejarNumeros(id)">5</button>
+            <button class="numero" id="six" onclick="manejarNumeros(id)">6</button>
+            <button id="mult" onclick="manejarSignos(id)">×</button>
+            <button id="right-parenthesis" onclick="manejarParentesis(id)">)</button>
+            <button class="numero" id="one" onclick="manejarNumeros(id)">1</button>
+            <button class="numero" id="two" onclick="manejarNumeros(id)">2</button>
+            <button class="numero" id="three" onclick="manejarNumeros(id)">3</button>
+            <button id="min" onclick="manejarSignos(id)">–</button>
+            <button id="delete" onclick="deshacer()"><</button>
+            <button class="numero" id="zero" onclick="manejarNumeros(id)">0</button>
+            <button id="dot" onclick="manejarNumeros(id)">.</button>
+            <button id="eq" onclick="resultado()">=</button>
+            <button id="plus" onclick="manejarSignos(id)">+</button>
+            <button id="clear-all" onclick="borrar()">AC</button>
+        </div>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
